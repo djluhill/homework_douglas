@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style>
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: green;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<script>
+function gen_message () {
+  var startupX = ["Google", "Apple", "Disney"];
+  var startupY = ["Ford", "Tesla", "Amazon"];
+  var random1 = Math.floor(Math.random()*startupX.length);
+  var random2 = Math.floor(Math.random()*startupY.length);
+  var random1String = startupX[random1];
+  var random2String = startupY[random2];
+  var message2 = "A startup that is " + random1String + " but for " + random2String ;
+  console.log(message2);
+  return message2;
+};
+  </script>
+<body>
+ 
+<H1 id="demo"></H1>
+ 
+<button type="button" onclick="document.getElementById('demo').innerHTML = gen_message()">Create new startup!</button>
+<button type="button" onclick="alert('X For Y!')">Favorite startup!</button>
+<button type="button" onclick="alert('X For Y!')">Print favorites!</button>
+<script src='https://code.jquery.com/ jquery-3.1.0.min.js'></script>
+<script src='js/main.js'></script>
+<script src='C:\Users\dougl\Desktop\GA Javascript class\js_class_homework1.js'></script>
+</body>
+</html>
